@@ -81,4 +81,5 @@ bot.on('message', message => {
                 message.react("✖")
             }).catch(function() {
             });
+    }}
 });
