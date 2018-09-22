@@ -81,5 +81,8 @@ bot.on('message', message => {
                 message.react("✖")
             }).catch(function() {
             });
+            }else{
+                return message.reply("fuck you bitch.")
+            }
     }}
 });
