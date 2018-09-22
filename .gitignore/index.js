@@ -63,7 +63,6 @@ bot.on('message', message => {
         .addField("Créé le", message.guild.createdAt)
         .addField("Tu as rejoin le", message.member.joinedAt)
         .addField("Utilisateurs sur le Discord", message.guild.memberCount)
-        .setColor("0x0000FF")
     message.channel.sendEmbed(embed)
     }
 });
