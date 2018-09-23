@@ -71,7 +71,7 @@ bot.on('message', message => {
             let args = message.content.split(" ").slice(1);
             let thingToEcho = args.join(yoyo, " ")
             var embed = new Discord.RichEmbed()
-                .setDescription("")
+                .setDescription("coucou")
                 .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
                 .setColor("#2ecc71")
                 .setTimestamp()
