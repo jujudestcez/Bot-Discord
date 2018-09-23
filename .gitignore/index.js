@@ -71,9 +71,9 @@ bot.on('message', message => {
             let args = message.content.split(" ").slice(1);
             let thingToEcho = args.join(" ")
             var embed = new Discord.RichEmbed()
+                .setDescription(`Sondage créé par : ${message.author.username}`, `${message.author.avatarURL}`)
                 .addField(thingToEcho, "Répondre avec :one: ou :two:")
                 .setColor("#2ecc71")
-                .setFooter(`Poll Started By: ${message.author.username}`, `${message.author.avatarURL}`)
                 .setTimestamp()
             message.guild.channels.find("name", "sondage").sendEmbed(embed)
             .then(function (message) {
