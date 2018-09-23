@@ -71,12 +71,12 @@ bot.on('message', message => {
             let args = message.content.split(" ").slice(1);
             let thingToEcho = args.join(" ")
             var embed = new Discord.RichEmbed()
-                .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
+                .addField(thingToEcho, "Répondre avec :one: ou :two:")
                 .setColor("#2ecc71")
                 .setTimestamp()
             message.guild.channels.find("name", "sondage").sendEmbed(embed)
             .then(function (message) {
-                message.react("\u2753")
+                message.react("")
             }).catch(function() {
             });
     }}
