@@ -71,7 +71,7 @@ bot.on('message', message => {
             let args = message.content.split(" ").slice(1);
             let thingToEcho = args.join(" ")
             var embed = new Discord.RichEmbed()
-                .addField(thingToEcho, "Répondre avec :one: ou :two:")
+                .addField(thingToEcho, "Répondre avec :one:, :two: ou :three:")
                 .setColor("#2ecc71")
                 .setFooter(`Sondage créé par : ${message.author.username}`, `${message.author.avatarURL}`)
                 .setTimestamp()
