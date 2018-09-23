@@ -73,7 +73,7 @@ bot.on('message', message => {
             var embed = new Discord.RichEmbed()
                 .addField(thingToEcho, "Répondre avec :one: ou :two:")
                 .setColor("#2ecc71")
-                .setFooter(`Sondage créé par : ${message.author.avatarURL}`, `${message.author.username}`)
+                .setFooter(`Sondage créé par : ${message.author.username}`, `${message.author.avatarURL}`)
                 .setTimestamp()
             message.guild.channels.find("name", "sondage").sendEmbed(embed)
             .then(function (message) {
