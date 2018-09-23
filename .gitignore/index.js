@@ -78,7 +78,7 @@ bot.on('message', message => {
             message.guild.channels.find("name", "sondage").sendEmbed(embed)
             .then(function (message) {
                 message.react("1️⃣")
-                message.react("")
+                message.react("1️⃣")
             }).catch(function() {
             });
     }}
