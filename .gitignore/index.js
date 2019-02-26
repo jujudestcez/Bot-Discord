@@ -9,15 +9,15 @@ const bot = new Discord.Client();
 var prefix = ("!") /*prefix for command*/
 
 bot.on('ready', function() {
-    bot.user.setGame("discord.gg/gHPB4G7"); /*"Playing discord.gg/gHPB4G7"*/
+    bot.user.setGame("discord.gg/SCUMBot"); /*"Playing discord.gg/gHPB4G7"*/
     console.log("Connected to Discord Server"); /*if the bot is connected : indicate in the console logs*/
 });
 
 bot.login(process.env.TOKEN); /*token scumbot*/
 
 bot.on('message', message => {
-    if (message.content === prefix + "help"){ /*test command*/
-        message.channel.sendMessage("Liste des commandes : /n -*help");
+    if (message.content === prefix + "command"){ /*test command*/
+        message.channel.sendMessage("test command");
     }
 
     if (message.content === prefix + "bmscum"){
