@@ -1,7 +1,7 @@
-/***************************/
-/* SCUMBOT DISCORD RELEASE */
-/* 19/09                   */
-/***************************/
++--------------------------------+
+/ ZéphyriaBot Discord RELEASE    |
+/ 19/09                          |
++--------------------------------+
 
 const Discord = require('discord.js');
 const bot = new Discord.Client();
@@ -9,7 +9,7 @@ const bot = new Discord.Client();
 var prefix = ("!") /*prefix for command*/
 
 bot.on('ready', function() {
-    bot.user.setGame("discord.gg/SCUMBot"); /*"Playing discord.gg/gHPB4G7"*/
+    bot.user.setGame("Zéphyria | !help"); /*"Playing discord.gg/gHPB4G7"*/
     console.log("Connected to Discord Server"); /*if the bot is connected : indicate in the console logs*/
 });
 
