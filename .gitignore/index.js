@@ -17,8 +17,8 @@ bot.login(process.env.TOKEN); /*token scumbot*/
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){ /*!help*/
-        message.channel.sendMessage(":clipboard: | **Liste des commands**");
-        message.channel.sendMessage("*!regles* : les règles du serveur")
+        message.autor.send(":clipboard: | **Liste des commands**");
+        message.autor.send("*!regles* : les règles du serveur")
     }
 
     if (message.content === prefix + "bmscum"){
