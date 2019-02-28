@@ -20,6 +20,10 @@ bot.on('message', message => {
         message.author.send(":clipboard: | **Liste des commands**");
         message.author.send("*!regles* : les règles du serveur")
     }
+    
+    if (message.content.includes('!help')) {
+        message.delete() /*delete command : !help*/
+    }
 
     if (message.content === prefix + "bmscum"){
         message.reply("https://bit.ly/2Mr58cI"); /*!bmscum : first battle metrics scum command test*/
