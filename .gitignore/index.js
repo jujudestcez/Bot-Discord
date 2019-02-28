@@ -21,8 +21,12 @@ bot.on('message', message => {
         message.author.send("*!regles* : les règles du serveur")
     }
     
-    if (message.content.includes('!help')) {
+    if (message.content.includes('!help')){
         message.delete() /*delete command : !help*/
+    }
+    
+    if (message.content === prefix + "site"){
+        message.channel.sendMessage("**Site web**https://minecraft.net");
     }
 
     if (message.content === prefix + "bmscum"){
