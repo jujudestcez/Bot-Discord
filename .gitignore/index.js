@@ -1,7 +1,7 @@
-**********************************
-/ ZéphyriaBot Discord RELEASE    /
-/ 19/09                          /
-**********************************
+/***************************/
+/* SCUMBOT DISCORD RELEASE */
+/* 19/09                   */
+/***************************/
 
 const Discord = require('discord.js');
 const bot = new Discord.Client();
